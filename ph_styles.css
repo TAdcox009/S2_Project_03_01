@@ -59,7 +59,10 @@ address {
 }
 
 /* Navigation Styles */
-nav {}
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* Section Styles */
 /* Description List Styles */
