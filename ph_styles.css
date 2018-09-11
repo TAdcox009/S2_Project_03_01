@@ -5,10 +5,16 @@
     font-family: Champagne;
     src: url('cac_champagne.woff');
     src: url('cac_champagne.ttf');
-    font-family: Dobkin;
+}
+
+@font-face {
+    font-family: Grunge;
     src: url('1942.woff');
     src: url('1942.ttf');
-    font-family: Grunge;
+}
+
+@font-face {
+    font-family: Dobkin;
     src: url('DobkinPlain.woff');
     src: url('DobkinPlain.ttf');
 }
@@ -36,10 +42,12 @@ body {
     font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
 }
 
+/* this is setting the background color of the headers to black */
 header {
     background-color: black;
 }
 
+/* this is adding padding to the paragraphs as well as no margin space */
 p {
     margin: 0px;
     padding: 5px 25px 25px 25px;
@@ -50,6 +58,7 @@ body>p {
     text-align: center;
 }
 
+/* padding can be written as padding: # # # #; unless you want to be more specifc and only set it for certain positions text-aling center centers the text in the web page*/
 address {
     font-style: normal;
     font-size: 0.9em;
@@ -59,10 +68,78 @@ address {
 }
 
 /* Navigation Styles */
-nav {
+nav a {
+    font-family: Trebuchet MS, Helvetica, sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+nav a:visited,
+nav a:link {
+    background-color: hsla(0, 0%, 42%, 0.4);
+    color: white;
+    Text-decoration: none;
+}
+
+/* nav a:hover is when you hover over the link and it changes to the selected color */
+nav a:active,
+nav a:hover {
+    text-decoration-color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsl(0, 0%, 42%, 0.7);
+}
+
 /* Section Styles */
+/* this is setting all the h1 tags nested inside section.playbill to the font size and weight as well as setting the margin and padding space. */
+section.playbill h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 20px 0px 10px 20px;
+}
+
+/* this is setting the h1 tags nested inside the  <section id="play1"> to that font family*/
+section#play1 h1 {
+    font-family: Champagne, cursiv;
+}
+
+/* this is settign the <section id="play1"> to the background color below. */
+section#play1 {
+    background-color: hsl(240, 100%, 88%);
+}
+
+section#play2 h1 {
+    font-family: Grunge, 'Times New Roman', Times, serif;
+}
+
+section#play2 {
+    background-color: hsl(25, 88%, 73%);
+}
+
+section#play3 h1 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+section#play3 {
+    background-color: hsl(0, 100%, 75%);
+}
+
+section#play4 h1 {
+    font-family: Dobkin, cursive;
+}
+
+section#play4 {
+    background-color: hsl(296, 86%, 86%);
+}
+
 /* Description List Styles */
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
